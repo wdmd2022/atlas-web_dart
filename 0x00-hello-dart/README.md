@@ -15,29 +15,33 @@ Read or watch:
 
 ### 0. Hello Holberton!
 file: `0-hello_holberton.dart`
+
 Write a dart program that print Hello Holberton! followed by a new line.
 - Use the function print
 ```
-youssef@Holberton/Dart$ dart 0-hello_holberton.dart
+douglas@Holberton/Dart$ dart 0-hello_holberton.dart
 Hello Holberton!
 
-youssef@Holberton/Dart$
+douglas@Holberton/Dart$
 ```
 
 ### 1. The Quotes
 file: 1-quotes.dart
+
 Write a Dart program that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line.
 - Use the function print
 ```
-youssef@Holberton/Dart$ dart 1-quotes.dart
+douglas@Holberton/Dart$ dart 1-quotes.dart
 "Programming is like building a multilingual puzzle
 
-youssef@Holberton/Dart$
+douglas@Holberton/Dart$
 ```
 
 ### 2. Print Number
 file: 2-print_number.dart
+
 Complete the source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
+
 Source code:
 ```
 void main() {
@@ -52,14 +56,15 @@ You are not allowed to cast the variable number into a string.
 
 Your code must be 3 lines long.
 ```
-youssef@Holberton/Dart$ dart 2-print_number.dart
+douglas@Holberton/Dart$ dart 2-print_number.dart
 98 Battery street
 
-youssef@Holberton/Dart$
+douglas@Holberton/Dart$
 ```
 
 ### 3. Print Doubles
 file: 3-print_double.dart
+
 Complete the source code in order to print the doubles stored in the variable number with a precision of 2 digits.
 Source code:
 ```
@@ -71,15 +76,17 @@ The output of the program should be:
 - `Double: ` followed by the double with only 2 digits
 - followed by a new line
 ```
-youssef@Holberton/Dart$ dart 3-print_double.dart
+douglas@Holberton/Dart$ dart 3-print_double.dart
 Double: 3.14
 
-youssef@Holberton/Dart$
+douglas@Holberton/Dart$
 ```
 
 ### 4. Print string
 file: 4-print_string.dart
-Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
+
+Complete the source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
+
 Source code:
 ```
 void main() {
@@ -94,10 +101,41 @@ The output of the program should be:
 You are not allowed to use any loops or conditional statement.
 Your program should be maximum 5 lines long.
 ```
-youssef@Holberton/Dart$ dart 4-print_string.dart > output
-youssef@Holberton/Dart$ cat -e output
+douglas@Holberton/Dart$ dart 4-print_string.dart > output
+douglas@Holberton/Dart$ cat -e output
 Holberton SchoolHolberton SchoolHolberton School$
 Holberton$
 $
-youssef@Holberton/Dart$
+douglas@Holberton/Dart$
+```
+
+### 5. Assertion
+file: 5-assertion.dart
+
+Complete the source code in order to make it check if the number is bigger or equal to 80.
+
+If it is, print `You Passed` otherwise the output should be `Uncaught Error: Assertion failed: "The score must be bigger or equal to 80`
+
+Source code:
+```
+void main(List<String> args) {
+  /*
+  Write Your code below
+   */
+}
+```
+- You are not allowed to use IF/ELSE.
+```
+douglas@Holberton/Dart$ dart --enable-asserts 5-assertion.dart 79
+Unhandled exception:
+'file:/douglas@Holberton/Dart/5-assertion.dart': Failed assertion: line 3 pos 10: 'nb >= 80': The score must be bigger or equal to 80
+#0      _AssertionError._doThrowNew (dart:core-patch/errors_patch.dart:51:61)
+#1      _AssertionError._throwNew (dart:core-patch/errors_patch.dart:40:5)
+#2      main (file:/douglas@Holberton/Dart/5-assertion.dart:3:10)
+#3      _delayEntrypointInvocation.<anonymous closure> (dart:isolate-patch/isolate_patch.dart:295:32)
+#4      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:192:12)
+
+douglas@Holberton/Dart$ dart --enable-asserts 5-assertion.dart 80
+You Passed
+douglas@Holberton/Dart$
 ```
