@@ -47,7 +47,9 @@ void main() {
 The output of the script should be:
 - the number, followed by Battery street,
 - followed by a new line
+
 You are not allowed to cast the variable number into a string.
+
 Your code must be 3 lines long.
 ```
 youssef@Holberton/Dart$ dart 2-print_number.dart
@@ -88,6 +90,7 @@ The output of the program should be:
 - 3 times the value of str
 - followed by a new line and the 9 first characters of str
 - followed by a new line
+
 You are not allowed to use any loops or conditional statement.
 Your program should be maximum 5 lines long.
 ```
