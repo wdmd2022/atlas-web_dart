@@ -139,3 +139,28 @@ douglas@Holberton/Dart$ dart --enable-asserts 5-assertion.dart 80
 You Passed
 douglas@Holberton/Dart$
 ```
+
+### 6. Positive anything is better than negative nothing
+file: 6-positive_or_negative.dart
+
+Write a dart program that, given an argument, determines if it is positive or negative
+- the variable number will store as a string you should convert to integer
+The output of the program should be the number, followed by:
+- if the number is greater than 0: `is positive`
+- if the number is 0: `is zero`
+- if the number is less than 0: `is negative`
+```
+douglas@Holberton/Dart$ dart 6-positive_or_negative.dart -4
+-4 is negative
+douglas@Holberton/Dart$ dart 6-positive_or_negative.dart 0
+0 is zero
+douglas@Holberton/Dart$ dart 6-positive_or_negative.dart -3
+-3 is negative
+douglas@Holberton/Dart$ dart 6-positive_or_negative.dart 10
+10 is positive
+douglas@Holberton/Dart$ dart 6-positive_or_negative.dart 6
+6 is positive
+douglas@Holberton/Dart$ dart 6-positive_or_negative.dart -10
+-10 is negative
+douglas@Holberton/Dart$
+```
