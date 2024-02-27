@@ -15,7 +15,7 @@ class User extends Password {
   }
 
   Map<String, dynamic> toJson() {
-    return {'id': id, 'name': name, 'age': age, 'height': height, 'Password': this.isValid()};
+    return {'id': id, 'name': name, 'age': age, 'height': height};
   }
 
   static User fromJson(Map<dynamic, dynamic> userJson) {
