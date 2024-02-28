@@ -1,6 +1,6 @@
 // dart func to print rick and morty characters
-import 'dart:convert';
-import 'package:http/http.dart' as http;
+// import 'dart:convert';
+// import 'package:http/http.dart' as http;
 
 Future<void> printRmCharacters() async {
     try {
