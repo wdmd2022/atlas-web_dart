@@ -10,7 +10,7 @@ Future<void> printRmCharacters() async {
         var response = await http.get(uri);
         // let's get loopy
         Map<dynamic, dynamic> decodedJson = jsonDecode(response.body);
-        List<dynamic> characterList = decodedJson['results'];
+        List<dynamic> charactersList = decodedJson['results'];
         for (var c in charactersList) {
             print(c['name']);
         }
