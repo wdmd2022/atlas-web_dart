@@ -1,35 +1,18 @@
+// dart func to print rick and morty characters
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-Future<String> printRmCharacters() async {
+Future<void> printRmCharacters() async {
     try {
-        final chars = [
-            "Rick Sanchez",
-            "Morty Smith",
-            "Summer Smith",
-            "Beth Smith",
-            "Jerry Smith",
-            "Abadango Cluster Princess",
-            "Abradolf Lincler",
-            "Adjudicator Rick",
-            "Agency Director",
-            "Alan Rails",
-            "Albert Einstein",
-            "Alexander",
-            "Alien Googah",
-            "Alien Morty",
-            "Alien Rick",
-            "Amish Cyborg",
-            "Annie",
-            "Antenna Morty",
-            "Antenna Rick",
-            "Ants in my Eyes Johnson",
-        ];
-        // for (var char in chars) {
-        //     print(char);
-        // }
-        return ("");
-    } catch (error) {
-        print("error caught: ${error}");
+        // make a url
+        var url = Uri.https('rickandmortyapi.com', '/api/character');
+        // get the content there
+        var response = await http.get(url);
+        // let's get loopy
+        for (Map chars in jsonDecode(response.body)["results"]) {
+            print(chars["name"]);
+        }
+    }   catch (error) {
+            print("error caught: ${error}");
     }
 }
