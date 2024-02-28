@@ -1,18 +1,20 @@
 // dart func to print rick and morty characters
-// import 'dart:convert';
-// import 'package:http/http.dart' as http;
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 
 Future<void> printRmCharacters() async {
     try {
-        // make a url
-        var url = Uri.https('rickandmortyapi.com', '/api/character');
+        // store the uri
+        var uri = Uri.https('rickandmortyapi.com', '/api/character');
         // get the content there
-        var response = await http.get(url);
+        var response = await http.get(uri);
         // let's get loopy
-        // for (Map chars in jsonDecode(response.body)["results"]) {
-        //     print(chars["name"]);
+        Map<dynamic, dynamic> decodedJson = jsonDecode(response.body);
+        List<dynamic> characterList = decodedJson['results'];
+        for (var c in charactersList) {
+            print(c['name']);
         }
-    }   catch (error) {
-            print("error caught: ${error}");
+    } catch (error) {
+        print("error caught: ${error}");
     }
 }
