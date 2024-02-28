@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'dart:core';
 import 'package:http/http.dart' as http;
 
-Future<void> printRmCharacteer async {
+Future<void> printRmCharacters async {
     try {
         final chars = [
             "Rick Sanchez",
