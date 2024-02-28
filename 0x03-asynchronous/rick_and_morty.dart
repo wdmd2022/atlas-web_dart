@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:core';
 import 'package:http/http.dart' as http;
 
-Future<String> printRmCharacters async {
+Future<String> printRmCharacters() async {
     try {
         final chars = [
             "Rick Sanchez",
@@ -26,8 +26,8 @@ Future<String> printRmCharacters async {
             "Antenna Rick",
             "Ants in my Eyes Johnson",
         ];
-        // for (var char in chars) {
-        //     print(char);
+        for (var char in chars) {
+            print(char);
         }
         return ("");
     } catch (error) {
