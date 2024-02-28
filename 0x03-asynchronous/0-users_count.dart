@@ -4,5 +4,5 @@ import 'dart:async';
 
 Future<void> usersCount() async {
     int usersCount = await fetchUsersCount();
-    print(count);
+    print(usersCount);
 }
