@@ -26,9 +26,9 @@ Future<String> printRmCharacters() async {
             "Antenna Rick",
             "Ants in my Eyes Johnson",
         ];
-        for (var char in chars) {
-            print(char);
-        }
+        // for (var char in chars) {
+        //     print(char);
+        // }
         return ("");
     } catch (error) {
         print('');
