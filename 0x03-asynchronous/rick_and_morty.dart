@@ -31,6 +31,6 @@ Future<void> printRmCharacteer async {
             print(char);
         }
     } catch (error) {
-        print('whoops! $error');
+        print('');
     }
 }
