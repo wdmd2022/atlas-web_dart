@@ -31,6 +31,6 @@ Future<String> printRmCharacters() async {
         // }
         return ("");
     } catch (error) {
-        print('');
+        print("error caught: ${error}");
     }
 }
